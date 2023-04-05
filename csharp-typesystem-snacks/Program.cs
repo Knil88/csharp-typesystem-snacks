@@ -13,7 +13,6 @@ Console.WriteLine("Inserisci il secondo numero : ");
 numero2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Il Secondo numero da te immesso è {numero2}");
 
-//Creiamo le condizioni che portano a stampare il nummero più grande
 
 if (numero1 > numero2)
 {
@@ -28,6 +27,53 @@ else
 {
     Console.WriteLine("I numeri sono pari");
 }
+
+//2-snack L’utente inserisce due parole in successione.Il software stampa prima la parola più corta, poi la parola più lunga.
+
+string parola1;
+
+string parola2;
+
+Console.WriteLine("Inserisci la prima parola");
+parola1 = Console.ReadLine();
+Console.WriteLine(parola1);
+Console.WriteLine("Inserisci la seconda parola");
+parola2 = Console.ReadLine();
+Console.WriteLine(parola2);
+
+if (parola1.Length > parola2.Length)
+{
+    Console.WriteLine($"La Parola con più caratteri è : {parola1} con {parola1.Length} caratteri");
+}
+else if (parola2.Length > parola1.Length)
+{
+    Console.WriteLine($"La Parola con più caratteri è : {parola2} con {parola2.Length} caratteri");
+}
+
+else
+    Console.WriteLine("Le parole hanno gli stessi caratteri");
+
+//3-snack l software deve chiedere per 10 volte all’utente di inserire un numero.Il programma stampa la somma di tutti i numeri inseriti.
+
+int n;
+int somma = 0;
+
+Console.WriteLine("Inserisci 10 numeri ");
+
+for (int i = 0; i < 10; i++)
+{
+   n = Convert.ToInt32(Console.ReadLine());
+
+    somma += n;
+
+  
+} ;
+Console.WriteLine($"La somma è {somma}");
+
+
+
+
+
 
 
 
