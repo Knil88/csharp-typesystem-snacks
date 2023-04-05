@@ -68,14 +68,14 @@ for (int i = 0; i < 10; i++)
 
   
 } ;
-Console.WriteLine($"La somma è {somma}");
+//Console.WriteLine($"La somma è {somma}");
 
 //  4. Calcola la somma e la media dei numeri da 2 a 10.
 int numeri;
 int sommaNumeri = 0;
 int media;
 
-Console.WriteLine("Inserisci numeri da 2 a 10 e fai la media ");
+//Console.WriteLine("Inserisci numeri da 2 a 10 e fai la media ");
 
 for (int i = 0; i < 9; i++)
 {
@@ -92,6 +92,28 @@ Console.WriteLine($"La media è {media}");
 
 //   5. Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
 
+int numero;
+
+
+Console.WriteLine("Stampa un numero");
+
+
+
+
+    numero = Convert.ToInt32(Console.ReadLine());
+
+    if (numero % 2 == 1)
+    {
+        Console.WriteLine("Inserisci un numero Pari");
+        numero = Convert.ToInt32(Console.ReadLine());
+    }
+    else
+   
+        Console.WriteLine($"Il numero inserito è {numero} ed è pari");
+
+
+
+    
 
 
 
