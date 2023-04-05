@@ -44,10 +44,12 @@ Console.WriteLine(parola2);
 if (parola1.Length > parola2.Length)
 {
     Console.WriteLine($"La Parola con più caratteri è : {parola1} con {parola1.Length} caratteri");
+    Console.WriteLine($"La Parola con meno caratteri è : {parola2} con {parola2.Length} caratteri");
 }
 else if (parola2.Length > parola1.Length)
 {
     Console.WriteLine($"La Parola con più caratteri è : {parola2} con {parola2.Length} caratteri");
+    Console.WriteLine($"La Parola con meno caratteri è : {parola1} con {parola1.Length} caratteri");
 }
 
 else
@@ -75,7 +77,7 @@ int numeri;
 int sommaNumeri = 0;
 int media;
 
-//Console.WriteLine("Inserisci numeri da 2 a 10 e fai la media ");
+Console.WriteLine("Inserisci numeri da 2 a 10 e fai la media ");
 
 for (int i = 0; i < 9; i++)
 {
@@ -128,12 +130,38 @@ else
     Console.WriteLine($"Spiacente ma il tuo nome non compare nella lista");
 }
 
+//7. Crea un array vuoto.Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+
+  int[] arrayNumeri = new int[6];
+
+Console.WriteLine("inserisci numeri");
+
+for(int i =0; i<6; i++)
+{
+   int numeroDaMettere = Convert.ToInt32(Console.ReadLine());
+
+    if(numeroDaMettere % 2 == 1)
+    {
+        arrayNumeri[i] = numeroDaMettere;
+        
+    }
+
+    
+
+  
+
+    
 
 
+}
+
+for (int i = 0; i < arrayNumeri.Length; i++)
+{
+    Console.WriteLine(arrayNumeri[i]);
+}
 
 
-
-
+//    8. Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
 
 
 
