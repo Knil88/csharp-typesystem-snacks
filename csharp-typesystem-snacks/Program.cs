@@ -68,7 +68,7 @@ for (int i = 0; i < 10; i++)
 
   
 } ;
-//Console.WriteLine($"La somma è {somma}");
+Console.WriteLine($"La somma è {somma}");
 
 //  4. Calcola la somma e la media dei numeri da 2 a 10.
 int numeri;
@@ -111,9 +111,26 @@ Console.WriteLine("Stampa un numero");
    
         Console.WriteLine($"Il numero inserito è {numero} ed è pari");
 
+//6. In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
+
+string[] invitati = { "Yari", "Giacomo", "Aldo", "Giovanni" };
+bool accettato = false;
+
+Console.WriteLine("Salve inserisci il tuo nome per scoprire se sei nella lista");
+string mioNome = Console.ReadLine();
+
+if (invitati.Contains(mioNome))
+{
+    Console.WriteLine($"Benvenuto alla festa {mioNome}");
+}
+else
+{
+    Console.WriteLine($"Spiacente ma il tuo nome non compare nella lista");
+}
 
 
-    
+
+
 
 
 
