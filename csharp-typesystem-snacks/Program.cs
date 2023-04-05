@@ -2,6 +2,8 @@
 
 //1-snack creare due numeri e stampare il maggiore 
 
+using System;
+
 int numero1;
 int numero2;
 
@@ -164,7 +166,28 @@ for (int i = 0; i < arrayNumeri.Length; i++)
 //    8. Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
 
 
+int[] arrayInteri = { 5, 6, 8, 5, 4 };
 
+for (int i = 0; i < arrayInteri.Length; i++)
+{
+    Console.WriteLine(arrayInteri[i]);
+}
+
+int sommaIntero = 0;
+
+foreach (int intero in arrayInteri)
+{
+    if (intero % 2 != 0)
+    {
+        sommaIntero += intero;
+    }
+
+
+}
+
+
+
+Console.WriteLine($"La somma dei soli numeri dispari è {sommaIntero}");
 
 
 
