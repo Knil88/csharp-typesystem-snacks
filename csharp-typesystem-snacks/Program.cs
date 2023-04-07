@@ -247,13 +247,41 @@ for (int i = 0; i < n_1; i++)
 }
 
 
+//Dare la possibilità di inserire due parole.Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe, altrimenti stampare la più lunga delle due.
+
+Console.WriteLine("Inserisci la prima parola:");
+string parola3 = Console.ReadLine();
+
+Console.WriteLine("Inserisci la seconda parola:");
+string parola4 = Console.ReadLine();
+
+if (parola3.Length == parola4.Length)
+{
+    Console.WriteLine(parola3 + " " + parola4);
+}
+else
+{
+    Console.WriteLine(parola3.Length > parola4.Length ? parola3 : parola4);
+}
+//  12. Scrivere una funzione per verificare se un numero è pari o dispari.
+
+Console.WriteLine("Inserisci un numero:");
+int numeroDis = Convert.ToInt32(Console.ReadLine());
+
+if (numeroDis % 2 == 0)
+{
+    Console.WriteLine(numeroDis + " è un numero pari.");
+}
+else
+{
+    Console.WriteLine(numeroDis + " è un numero dispari.");
+}
+    
 
 
 
 
 
-
-        
 
 
 
